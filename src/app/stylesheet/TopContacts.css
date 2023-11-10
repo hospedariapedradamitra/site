@@ -1,0 +1,32 @@
+.TopContacts {
+  background-color: #faf9f5;
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+.horizontal-menu {
+  overflow: hidden;
+}
+
+.horizontal-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.horizontal-menu li {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.horizontal-menu a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.horizontal-menu a:hover {
+  color: #497c22;
+  transition: ease-in-out 0.3s;
+}

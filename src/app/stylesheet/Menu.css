@@ -1,0 +1,5 @@
+.itemsMenu:hover {
+    color: #497c22;
+    transition: ease-in-out 0.3s;
+    font-weight: 600;
+}

@@ -1,0 +1,7 @@
+.backgroundDiv {
+  background-image: url("../../../public/citation1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
