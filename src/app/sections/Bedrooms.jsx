@@ -6,6 +6,11 @@ import Quarto3 from "../../../public/quarto3.webp";
 import Quarto4 from "../../../public/quarto4.webp";
 import Suite1 from "../../../public/suite1.webp";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -101,50 +106,71 @@ const Bedrooms = () => {
         </div>
       </div>
       <div className="flex BedroomsPics">
-        <div className="w-1/3 p-5">
-          <Image
-            src={Quarto1}
-            alt="Quarto 1"
-            width={2048}
-            height={1365}
-            layout="responsive"
-          />
-        </div>
-        <div className="w-1/3 p-5">
-          <Image
-            src={Quarto2}
-            alt="Quarto 2"
-            width={2048}
-            height={1365}
-            layout="responsive"
-          />
-        </div>
-        <div className="w-1/3 p-5">
-          <Image
-            src={Quarto3}
-            alt="Quarto 3"
-            width={2048}
-            height={1365}
-            layout="responsive"
-          />
-        </div>
-        <div className="w-1/3 p-5">
-          <Image
-            src={Quarto4}
-            alt="Quarto 4"
-            width={2048}
-            height={1365}
-            layout="responsive"
-          />
-        </div>
-        <div className="w-1/3 p-5">
-          <Image
-            src={Suite1}
-            alt="Suíte 1"
-            width={2048}
-            height={1365}
-            layout="responsive"
-          />
+        <div className="w-full px-20">
+          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <SwiperSlide>
+              <Image
+                src={Quarto1}
+                alt="Quarto 2"
+                width={2048}
+                height={1365}
+                layout="responsive"
+              />
+              <p className="text-center pt-5 text-2xl font-bold">Quarto 01</p>
+              <p className="text-xl text-center">Quarto com 1 cama de casal</p>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={Quarto2}
+                alt="Quarto 2"
+                width={2048}
+                height={1365}
+                layout="responsive"
+              />
+              <p className="text-center pt-5 text-2xl font-bold">Quarto 02</p>
+              <p className="text-xl text-center">
+                Quarto com 1 cama de casal e 1 de solteiro
+              </p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Image
+                src={Quarto3}
+                alt="Quarto 3"
+                width={2048}
+                height={1365}
+                layout="responsive"
+              />
+              <p className="text-center pt-5 text-2xl font-bold">Quarto 03</p>
+              <p className="text-xl text-center">
+                Quarto com 1 beliche e 1 cama de solteiro
+              </p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Image
+                src={Quarto4}
+                alt="Quarto 4"
+                width={2048}
+                height={1365}
+                layout="responsive"
+              />
+              <p className="text-center pt-5 text-2xl font-bold">Quarto 04</p>
+              <p className="text-xl text-center">Quarto com 2 beliches</p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Image
+                src={Suite1}
+                alt="Suíte 1"
+                width={2048}
+                height={1365}
+                layout="responsive"
+              />
+              <p className="text-center pt-5 text-2xl font-bold">Suíte 01</p>
+              <p className="text-xl text-center">Suíte especial</p>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </div>
