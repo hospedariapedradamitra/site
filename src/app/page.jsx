@@ -8,11 +8,11 @@ import OurPlace from "./sections/OurPlace";
 import Attractions from "./sections/Attractions";
 import Videos from "./sections/Videos";
 import Bedrooms from "./sections/Bedrooms";
-
-import Address from "./sections/Address";
 import Booking from "./sections/Booking";
-import Footer from "./sections/Footer";
 import Testimonials from "./sections/Testimonials";
+import Address from "./sections/Address";
+import Footer from "./sections/Footer";
+import Credits from "./sections/Credits";
 import FloatingWhatsAppButton from "./components/WhatsApp";
 
 export default function Home() {
@@ -27,9 +27,10 @@ export default function Home() {
       <Videos />
       <Bedrooms />
       <Booking />
-      {/* <Testimonials />
-            <Address />
-            <Footer /> */}
+      <Testimonials />
+      <Address />
+      <Footer />
+      <Credits />
       <FloatingWhatsAppButton />
     </main>
   );
