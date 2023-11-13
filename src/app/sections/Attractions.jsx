@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal"; // Corrected import statement
 
 const Attractions = () => {
   const images = [
@@ -16,12 +17,27 @@ const Attractions = () => {
     "/quarto2.webp",
     "/quarto3.webp",
   ];
+
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="mainAttraction bg-gray-100 px-20 py-10">
       <div className="flex AttractionsItem" id="attractions">
         <div className="w-1/2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5">
           {images.map((imageUrl, index) => (
-            <div key={index} className="relative overflow-hidden rounded">
+            <div
+              key={index}
+              className="relative overflow-hidden rounded cursor-pointer"
+              onClick={() => openModal(imageUrl)}
+            >
               <Image
                 src={imageUrl}
                 alt={`Image ${index + 1}`}
@@ -32,6 +48,27 @@ const Attractions = () => {
             </div>
           ))}
         </div>
+
+        <Modal
+          isOpen={selectedImage !== null}
+          onRequestClose={closeModal}
+          className="image-modal"
+          overlayClassName="overlay-modal"
+        >
+          <div className="modal-content">
+            <Image
+              src={selectedImage}
+              alt="Expanded Image"
+              width={200}
+              height={200}
+              layout="responsive"
+            />
+            <button className="close-button" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </Modal>
+
         <div className="w-1/2 texto p-5">
           <h2 className="text-3xl">Atrações e Natureza</h2>
           <div className="waving-line"></div>

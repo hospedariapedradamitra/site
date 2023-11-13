@@ -13,6 +13,7 @@ import Address from "./sections/Address";
 import Booking from "./sections/Booking";
 import Footer from "./sections/Footer";
 import Testimonials from "./sections/Testimonials";
+import FloatingWhatsAppButton from "./components/WhatsApp";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <Testimonials />
             <Address />
             <Footer /> */}
+      <FloatingWhatsAppButton />
     </main>
   );
 }

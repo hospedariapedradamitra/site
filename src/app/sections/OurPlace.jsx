@@ -4,13 +4,11 @@ import Quarto1 from "../../../public/quarto1.webp";
 import Quarto2 from "../../../public/quarto2.webp";
 import Quarto3 from "../../../public/quarto3.webp";
 import Quarto4 from "../../../public/quarto4.webp";
-
 import Image from "next/image";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 const OurPlace = () => {
   return (
@@ -66,7 +64,7 @@ const OurPlace = () => {
           </a>
         </div>
         <div className="w-1/2">
-          <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+          <Swiper pagination={true} loop={true} modules={[Pagination]} className="mySwiper">
             <SwiperSlide>
               <Image
                 src={OurPlaceImage1}
