@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import Modal from "react-modal"; // Corrected import statement
+import Modal from "react-modal";
 
 const Attractions = () => {
   const images = [
@@ -49,26 +49,6 @@ const Attractions = () => {
           ))}
         </div>
 
-        <Modal
-          isOpen={selectedImage !== null}
-          onRequestClose={closeModal}
-          className="image-modal"
-          overlayClassName="overlay-modal"
-        >
-          <div className="modal-content">
-            <Image
-              src={selectedImage}
-              alt="Expanded Image"
-              width={200}
-              height={200}
-              layout="responsive"
-            />
-            <button className="close-button" onClick={closeModal}>
-              Close
-            </button>
-          </div>
-        </Modal>
-
         <div className="w-1/2 texto p-5">
           <h2 className="text-3xl">Atrações e Natureza</h2>
           <div className="waving-line"></div>
@@ -89,6 +69,26 @@ const Attractions = () => {
             Adoramos fazer amigos!
           </p>
         </div>
+
+        <Modal
+          isOpen={selectedImage !== null}
+          onRequestClose={closeModal}
+          className="image-modal"
+          overlayClassName="overlay-modal"
+        >
+          <div className="modal-content">
+            <Image
+              src={selectedImage}
+              alt="Expanded Image"
+              width={500}
+              height={500}
+              layout="responsive"
+            />
+            <button className="close-button" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </Modal>
       </div>
       <div className="buttonAttraction py-10 justify-center align-center text-center">
         <a

@@ -5,7 +5,7 @@ const Videos = () => {
     <div className="mainVideo pt-10">
       <div className="title">
         <div className="child">
-          <h2 className="text-3xl">Galeria de Videos</h2>
+          <h2 className="text-3xl">Galeria de Vídeos</h2>
           <div className="waving-line"></div>
         </div>
       </div>
