@@ -8,7 +8,7 @@ import Weather from "../components/Weather";
 
 const TopContacts = () => {
   return (
-    <div className="pt-2 pl-2 pr-2">
+    <div className="pt-2 pl-2 pr-2" id="home">
       <nav className="TopContacts horizontal-menu flex justify-between">
         <ul className="left-menu w-70">
           <li>

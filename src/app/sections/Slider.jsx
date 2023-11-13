@@ -22,7 +22,7 @@ const Slideshow = () => {
         <Fade>
           {fadeImages.map((fadeImage, index) => (
             <div key={index}>
-                  <Image width={1920} height={600} layout='responsive' src={fadeImage.url} alt="Hospedaria Pedra da Mitra" />
+                  <Image width={1920} height={600} layout="responsive" src={fadeImage.url} alt="Hospedaria Pedra da Mitra" />
               <h2>{fadeImage.caption}</h2>
             </div>
           ))}

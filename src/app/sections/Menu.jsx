@@ -7,19 +7,19 @@ const Menu = () => {
   return (
     <nav className="flex w-screen p-5 items-center">
       <div className="flex-1 flex justify-center mr-auto">
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">HOME</a>
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">SOBRE NÓS</a>
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">HOSPEDAGEM</a>
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">ATRAÇÕES</a>
+        <a href="#home" className="mx-4 text-sm text-center itemsMenu font-bold">HOME</a>
+        <a href="#ourplace" className="mx-4 text-sm text-center itemsMenu font-bold">SOBRE NÓS</a>
+        <a href="#bedrooms" className="mx-4 text-sm text-center itemsMenu font-bold">HOSPEDAGEM</a>
+        <a href="#attractions" className="mx-4 text-sm text-center itemsMenu font-bold">ATRAÇÕES</a>
       </div>
       <div className="mx-12">
         <Image src={Logo} weight={120} height={120} alt="Hospedaria Pedra da Mitra" />
       </div>
       <div className="flex-1 flex justify-center ml-auto">
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">DEPOIMENTOS</a>
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">ONDE ESTAMOS</a>
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">BLOG</a>
-        <a href="#" className="mx-4 text-sm text-center itemsMenu">CONTATO</a>
+        <a href="#" className="mx-4 text-sm text-center itemsMenu font-bold">DEPOIMENTOS</a>
+        <a href="#" className="mx-4 text-sm text-center itemsMenu font-bold">ONDE ESTAMOS</a>
+        <a href="#" className="mx-4 text-sm text-center itemsMenu font-bold">BLOG</a>
+        <a href="#" className="mx-4 text-sm text-center itemsMenu font-bold">CONTATO</a>
       </div>
     </nav>
   );
