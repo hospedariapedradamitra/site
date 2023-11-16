@@ -4,18 +4,18 @@ import Modal from "react-modal";
 
 const Attractions = () => {
   const images = [
-    "/quarto1.webp",
-    "/quarto2.webp",
-    "/quarto3.webp",
-    "/quarto1.webp",
-    "/quarto2.webp",
-    "/quarto3.webp",
-    "/quarto1.webp",
-    "/quarto2.webp",
-    "/quarto3.webp",
-    "/quarto1.webp",
-    "/quarto2.webp",
-    "/quarto3.webp",
+    "/atracoes01.webp",
+    "/atracoes02.webp",
+    "/atracoes03.webp",
+    "/atracoes04.webp",
+    "/atracoes05.webp",
+    "/atracoes06.webp",
+    "/atracoes07.webp",
+    "/atracoes08.webp",
+    "/atracoes09.webp",
+    "/atracoes10.webp",
+    "/atracoes11.webp",
+    "/atracoes12.webp",
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);

@@ -1,5 +1,5 @@
 import React from "react";
-import OurPlaceImage1 from "../../../public/ourPlace1.jpg";
+import OurPlaceImage1 from "../../../public/ourPlace1.webp";
 import Quarto1 from "../../../public/quarto1.webp";
 import Quarto2 from "../../../public/quarto2.webp";
 import Quarto3 from "../../../public/quarto3.webp";
